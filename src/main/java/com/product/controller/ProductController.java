@@ -33,6 +33,8 @@ public class ProductController {
 	@DeleteMapping("/deleteproduct/{id}")
 	public String deleteProduct(@PathVariable("id") int id) {
 		System.out.println("Delete method Called");
+		
+		System.out.println("Comment added for git changes");
 		return productSer.deleteProduct(id);
 	}
 }
